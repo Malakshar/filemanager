@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.shortcuts import render_to_response
 import json
 from django.http import HttpResponse
 import shutil
 import os
 from .filemanager import FileManager
 
-fm = FileManager('/home', False)
+# fm = FileManager('/home', False)
+fm = FileManager('/', False)
 
 
 def index(request):
